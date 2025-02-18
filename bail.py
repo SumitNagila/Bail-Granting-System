@@ -11,7 +11,6 @@ import numpy as np
 import sklearn
 import matplotlib.pyplot as plt
 import pandas as pd
-import streamlit as st
 
 dataset = pd.read_csv('Balanced_Data1.csv')
 X = dataset.iloc[:, :-1].values
@@ -51,7 +50,3 @@ if pred[0][1] == 1.0:
 else:
   print("No")
   
-
-st.title("web page")
-st.header("this will predict if bail or not")
-
